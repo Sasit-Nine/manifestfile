@@ -15,7 +15,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: next-service
+            name: ui-service
             port:
               number: 80
       - path: /order
