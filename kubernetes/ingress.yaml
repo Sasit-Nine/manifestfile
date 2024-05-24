@@ -11,17 +11,17 @@ spec:
   - host: wallserver.dyndns.info
     http:
       paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: ui-service
-            port:
-              number: 80
-      - path: /order
+      - path: /product
         pathType: Prefix   
         backend:
           service:
-            name: order-service  
+            name: product-service  
             port:
-              number: 80         
+              number: 80        
+      - path: /customer
+        pathType: Prefix   
+        backend:
+          service:
+            name: customer-service  
+            port:
+              number: 80  
