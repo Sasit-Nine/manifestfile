@@ -9,5 +9,5 @@ spec:
   ingressClassName: nginx
   rules:
   - host: wallserver.dyndns.info
-    http:
+
       
