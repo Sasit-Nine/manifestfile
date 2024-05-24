@@ -10,5 +10,4 @@ spec:
   rules:
   - host: wallserver.dyndns.info
     http:
-      paths:
       
