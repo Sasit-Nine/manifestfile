@@ -25,10 +25,10 @@ spec:
             name: customer-service
             port:
               number: 80
-      - path: /orders
+      - path: /users
         pathType: Prefix   
         backend:
           service:
-            name: order-service  
+            name: customer-service 
             port:
               number: 80         
