@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: next-ingress
+  name: ingress
   namespace: default
   annotations:
     nginx.ingress.kubernetes.io/use-regex: "true"
@@ -9,19 +9,4 @@ spec:
   ingressClassName: nginx
   rules:
   - host: wallserver.dyndns.info
-    http:
-      paths:
-      - path: /product
-        pathType: Prefix   
-        backend:
-          service:
-            name: product-service  
-            port:
-              number: 80        
-      - path: /customer
-        pathType: Prefix   
-        backend:
-          service:
-            name: customer-service  
-            port:
-              number: 80  
+
